@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MythicVisual - Explain Meme</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <header>
+        <h1>MythicVisual</h1>
+        <img src="{{ url_for('static', filename='images/mythicvisual_logo.jpg') }}" alt="MythicVisual_logo" width="300">
+    </header>
+    <div id="explanation">
+        {{ explanation }}
+    </div>
+    <div class="button-container">
+        <button id="alternative-explanation" type="button">Alternative Explanation</button>
+    </div>
+    <script>
+        document.getElementById("alternative-explanation").addEventListener("click", function() {
+            location.reload();
+        });
+    </script>
+    <a href="{{ url_for('home') }}">Go back</a>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MythicVisual - Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div id="hamburger-menu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <h1>MythicVisual</h1>
+        <img src="static/images/mythicvisual_logo.jpg" alt="mythicvisual_logo" width="300">
+    </header>
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="/terms_of_service">Terms of Service</a></li>
+                <li><a href="/privacy_policy">Privacy Policy</a></li>
+                <li><a href="mailto:ndlovunathan04@gmail.com">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="about">
+      <h2>About MythicVisual</h2>
+      <p>
+        MythicVisual is an AI-driven web application designed to decode and explain memes. By uploading a meme image, our advanced AI examines the text, context, and elements within the image to produce an easily understandable explanation. Give it a try and gain insights into a wide range of internet memes, from the most popular to the most obscure!
+      </p>
+    </section>
+    <section id="upload">
+      <form method="POST" action="/explain_meme" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Explain Meme">
+      </form>
+    </section>
+    <script>
+        document.getElementById("hamburger-menu").addEventListener("click", function() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.left === "-250px") {
+                sidebar.style.left = "0";
+            } else {
+                sidebar.style.left = "-250px";
+            }
+        });
+    </script>
+  </body>
+</html>

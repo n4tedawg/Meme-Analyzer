@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#explanation {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#alternative-explanation {
+    display: inline-block;
+}
+
+#about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Hamburger menu styles */
+#hamburger-menu {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 5px;
+    background-color: #007bff;
+    margin: 6px 0;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007bff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: #0056b3;
+    padding-left: 10px;
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#meme-explainer-form input[type="file"] {
+    font-size: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#explain-btn {
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    transition-duration: 0.4s;
+    display: inline-block;
+    text-align: center;
+}
+
+#explain-btn:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 1rem;
+}
+
+#displayed-meme {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: white;
+}

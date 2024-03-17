@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MythicVibes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="hamburger-dropdown" class="hamburger-dropdown-content">
+          <a href="/terms_of_service">Terms of Service</a>
+          <a href="/privacy_policy">Privacy Policy</a>
+        </div>
+        <h1>MythicVibes</h1>
+      </nav>
+    </header>
+    <h2>Explain Meme</h2>
+    <form method="POST" action="/explain_meme" enctype="multipart/form-data">
+      <label for="image">Upload an image:</label><br>
+      <input type="file" id="image" name="image"><br>
+      <input type="submit" value="Explain Meme">
+    </form>
+  </body>
+</html>
